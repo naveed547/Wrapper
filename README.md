@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+How to run Wrapper
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This example demos a basic host application loading from different remote component.
 
-## Available Scripts
+UIComponents standalone application which exposes baisc UI Button component.
+DomainComponents standalone application which exposes enhanced UI Button component.
+Page1 standalone application which exposes Page1 module built using shared remote UIComponents and DomainComponents.
+Page2 standalone application which exposes Page2 module built using shared remote UIComponents and DomainComponents.
+LibApp holds all the node_modules, store and context used across the remote
 
-In the project directory, you can run:
+Running Demo
+Clone LibApp Remote as a sibling folder to Wrapper
+  Under LibApp
+    npm install
+    npm start
+Clone UIComponents Remote as a sibling folder to Wrapper
+  Under UIComponents
+    npm install
+    npm start
+Clone DomainComponnents Remote as a sibling folder to Wrapper
+  Under DomainComponnents
+    npm install
+    npm start
+Clone Page1 Remote as a sibling folder to Wrapper
+  Under Page1
+    npm install
+    npm start
+Clone Page2 Remote as a sibling folder to Wrapper
+  Under Page2
+    npm install
+    npm start
+Under Wrapper Remote
+  npm install
+  npm start
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+localhost:8085 (STANDALONE REMOTE LibApp holds all lib, store and context)
+localhost:8082 (STANDALONE REMOTE DomainComponents)
+localhost:8083 (STANDALONE REMOTE UIComponents)
+localhost:8084 (STANDALONE REMOTE Page1)
+localhost:8085 (STANDALONE REMOTE Page2)
+localhost:8086 (HOST Wrapper act as a shell)
